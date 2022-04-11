@@ -1,0 +1,24 @@
+.card {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+img {
+  width: 120%;
+}
+
+.card-img-top {
+  height: 75%;
+  clip-path: polygon(0 0, 100% 0%, 100% 81%, 0 95%);
+}
+
+.content {
+  margin-top: -30px;
+  text-align: right;
+}
+
+.icons {
+  border-bottom: 4px solid var(--primary);
+  padding-bottom: 8px;
+  display: inline;
+}

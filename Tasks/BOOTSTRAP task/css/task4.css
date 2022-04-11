@@ -1,0 +1,25 @@
+body {
+  background-color: #f5f6fa;
+}
+
+.container {
+  width: 85%;
+}
+
+.table thead tr th {
+  border-top: 0;
+}
+
+.select-category {
+  max-width: 120px;
+  border-radius: 20px;
+}
+
+.rounded-circle {
+  width: 40px;
+  height: 40px;
+}
+table {
+  table-layout: auto;
+  width: 100%;
+}

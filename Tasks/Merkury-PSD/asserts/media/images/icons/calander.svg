@@ -1,0 +1,19 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1448 312" width="1448" height="312">
+	<title>Inteligentny obiekt wektorowy-ai</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: none;stroke: #5384ff;stroke-linecap:round;stroke-linejoin:round;stroke-width: 8 } 
+		.s1 { fill: #5384ff } 
+	</style>
+	<g id="Warstwa 4">
+		<path id="&lt;Path&gt;" class="s0" d="m596 184h-72v-64h72v64z" />
+		<path id="&lt;Path&gt;" class="s0" d="m576 112v16" />
+		<path id="&lt;Path&gt;" class="s0" d="m544 112v16" />
+		<path id="&lt;Path&gt;" class="s1" d="m546.13 152h-4.25c-1.04 0-1.88-0.84-1.88-1.88v-4.25c0-1.04 0.84-1.88 1.88-1.88h4.25c1.04 0 1.88 0.84 1.88 1.88v4.25c0 1.04-0.84 1.88-1.88 1.88z" />
+		<path id="&lt;Path&gt;" class="s1" d="m562.13 152h-4.25c-1.04 0-1.88-0.84-1.88-1.88v-4.25c0-1.04 0.84-1.88 1.88-1.88h4.25c1.04 0 1.88 0.84 1.88 1.88v4.25c0 1.04-0.84 1.88-1.88 1.88z" />
+		<path id="&lt;Path&gt;" class="s1" d="m578.13 152h-4.25c-1.04 0-1.88-0.84-1.88-1.88v-4.25c0-1.04 0.84-1.88 1.88-1.88h4.25c1.04 0 1.88 0.84 1.88 1.88v4.25c0 1.04-0.84 1.88-1.88 1.88z" />
+		<path id="&lt;Path&gt;" class="s1" d="m546.13 168h-4.25c-1.04 0-1.88-0.84-1.88-1.88v-4.25c0-1.04 0.84-1.88 1.88-1.88h4.25c1.04 0 1.88 0.84 1.88 1.88v4.25c0 1.04-0.84 1.88-1.88 1.88z" />
+		<path id="&lt;Path&gt;" class="s1" d="m562.13 168h-4.25c-1.04 0-1.88-0.84-1.88-1.88v-4.25c0-1.04 0.84-1.88 1.88-1.88h4.25c1.04 0 1.88 0.84 1.88 1.88v4.25c0 1.04-0.84 1.88-1.88 1.88z" />
+		<path id="&lt;Path&gt;" class="s1" d="m578.13 168h-4.25c-1.04 0-1.88-0.84-1.88-1.88v-4.25c0-1.04 0.84-1.88 1.88-1.88h4.25c1.04 0 1.88 0.84 1.88 1.88v4.25c0 1.04-0.84 1.88-1.88 1.88z" />
+	</g>
+</svg>

@@ -1,0 +1,11 @@
+body {
+  background-color: #f5f6fa;
+}
+
+.nav-link {
+  color: #333;
+}
+
+.tab-pane h6 {
+  font-size: 18px;
+}

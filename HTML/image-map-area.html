@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body id="hometop">
+
+    <h1>img, map, area, figure, figcaption, picture, svg</h1>
+
+    <section>
+      <img src="../Images/sea-sky.jfif" usemap="#sea-sky" alt="main" width="300px" height="300px">
+      <map name="sea-sky">
+        <area shape="rect" coords="0,0,300,80" href="../Images/sky.jpg" alt="sky">
+        <area shape="rect" coords="0,120,300,300" href="../Images/sea.jpg" alt="sea">
+        <area shape="circle" coords="150,100,30" href="../Images/sun.jpeg" alt="sun">
+      </map>
+    </section>
+
+    <hr>
+    <section>
+      <figure>
+        <img src="../Images/sea.jpg" alt="sea" width="300px" height="300px">
+        <figcaption>fig 1. Sea</figcaption>
+      </figure>
+
+      <hr>
+      <figure>
+        <figcaption>fig 1. Sky</figcaption>
+        <img src="../Images/sky.jpg" alt="sky" width="300px" height="300px">
+      </figure>
+    </section>
+
+    <hr>
+    <section>
+      <h1>picture tag is used to display diffrent images in diffrent viewport.</h1>
+      <p>if width is 768px or up then browser show the sky image</p>
+      <p>if widrth is between 500px and 768px then browser show the sun image.</p>
+      <p> img tag is used for fallback of source tag if any source viewport is not match the viewport then img tag is
+        shownm its content means images</p>
+      <picture>
+        <source media="(min-width:768px)" srcset="../images/sky.jpg">
+        <source media="(min-width:500px)" srcset="../images/sun.jpeg">
+        <img src="../Images/sea-sky.jfif" alt="sea-sky" width="300" height="300">
+      </picture>
+    </section>
+
+    <hr>
+    <section>
+      <h1>svg</h1>
+      <svg width="400" height="400" style="border:2px solid red">
+        <rect x="25" y="25" width="200" height="200" fill="#030300"></rect>
+        <circle cx="300" cy="100" r="40" fill="red"> </circle>
+        <polygon points="25 25,75 25, 25 75, 25 25" stroke-width="2" fill="orange"></polygon>
+        <polygon points="225 25, 225 75, 175 25,225 25 " stroke-width="2" fill="orange"></polygon>
+        <polygon points="25 225,25 175, 75 225, 25 225" stroke-width="2" fill="orange"></polygon>
+        <polygon points="225 225,225 175,175 225, 225 225" stroke-width="2" fill="orange"></polygon>
+      </svg>
+
+      <svg width="400" height="400" style="border:2px solid #000">
+        <polygon points="100 100, 200 100, 250 150, 250 250, 200 300, 100 300, 50 250, 50 150, 100 100" fill="red"
+          stroke-width="2" stroke="blue">
+        </polygon>
+      </svg>
+    </section>
+
+    <hr>
+    <section>
+      <h1>audio and video</h1>
+      <audio controls muted loop>
+        <source src="../Audio/a.mp3" type="audio/mp3">
+      </audio>
+      <video controls width="300" height="300" muted autoplay poster="../Images/sea.jpg">
+        <source src="../Audio/a_video.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <hr>
+    <section>
+      <h1>a tag </h1>
+      <p> a tag is inline element so it is display in row</p>
+      <a href="https://www.youtube.com/"> youtube</a> <br>
+      <a href="mailto: example@123.com"> send mail</a>
+      <a href="tel:+919586965642">call me</a>
+      also use # to go in specific section
+      <a href="#hometop">hometop</a>
+    </section>
+  </body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      fieldset {
+        width: 40%;
+      }
+
+      table {
+        width: 80%;
+        border-collapse: collapse;
+      }
+    </style>
+    <title>Login form</title>
+  </head>
+
+  <body>
+
+    <fieldset>
+      <legend>Login form</legend>
+      <a href="form.html"><button>home</button></a>
+      <form action="form-success.html" target="_blank" method="get">
+        <table>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" name="email" id="email" placeholder="abc@xyz.com" required></td>
+          </tr>
+          <tr>
+            <td><label for="mobileno">Mobile No.:</label></td>
+            <td><input type="text" name="mobileno" id="mobileno" placeholder="96584XXXXX" maxlength="10" required></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" name="password" id="password" required></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="reset" value="Reset">
+              <input type="submit" value="Submit">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+
+</html>

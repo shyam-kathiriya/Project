@@ -1,0 +1,7 @@
+.list-group-item {
+  border: none;
+}
+
+.list-group-item-secondary {
+  background-color: #f3f4f5;
+}

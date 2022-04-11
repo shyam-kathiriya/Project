@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <style>
+      .row>div {
+        padding: 10px;
+        border: 1px solid;
+      }
+
+      .card-example .row>div {
+        border: 0;
+      }
+
+      .container.align .row {
+        height: 150px;
+        background-color: aqua;
+      }
+    </style>
+    <title>Bootstrap Practice</title>
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+
+      <!-- grid -->
+      <h1 class="mt-4 text-center">grid system</h1>
+
+      <div class="container">
+        <h2 class="text-capitalize text-primary  mt-3">auto columns</h2>
+        <div class="row">
+          <div class="col">1</div>
+          <div class="col">2</div>
+          <div class="col">3</div>
+          <div class="col">4</div>
+        </div>
+        <div class="row">
+          <div class="col">1</div>
+          <div class="col">2</div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">1</div>
+          <div class="col-8">2</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="text-capitalize text-primary mt-3">offseting</h2>
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            col-sm-10 offset-sm-1
+          </div>
+          <div class="col-sm-12">
+            col-sm-12
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-8 col-lg-10 offset-sm-3 offset-md-2 offset-lg-1">
+            col-sm-6 col-md-8 col-lg-10 offset-sm-3 offset-md-2 offset-lg-1
+          </div>
+        </div>
+      </div>
+
+      <div class="container align">
+        <h2 class="text-capitalize text-primary mt-3">align-items</h2>
+        <div class="row">
+          <div class="col align-self-start">
+            1
+          </div>
+          <div class="col align-self-center">
+            2
+          </div>
+          <div class="col align-self-end">
+            3
+          </div>
+        </div>
+        <div class="row mt-4 align-items-start">
+          <div class="col">1</div>
+          <div class="col">2</div>
+          <div class="col">3</div>
+        </div>
+        <div class="row mt-4 align-items-center">
+          <div class="col">1</div>
+          <div class="col">2</div>
+          <div class="col">3</div>
+        </div>
+        <div class="row mt-4 align-items-end">
+          <div class="col">1</div>
+          <div class="col">2</div>
+          <div class="col">3</div>
+        </div>
+      </div>
+      <br>
+
+      <!-- table  -->
+      <div class="container">
+        <h1 class="mt-4 text-center">Table</h1>
+        <h2 class="text-center">1 light table with border</h2>
+        <table class="table table-light table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>No</th>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="text-center">2 dark table</h2>
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="text-center">3 table-strip</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>sk</td>
+              <td>dk</td>
+              <td>90</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="text-center">4 table hover responsive</h2>
+        <div class="table-responsive-lg">
+          <table class="table table-hover">
+            <thead class="thead-light">
+              <tr>
+                <th>No</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>Physics</th>
+                <th>Chemistry</th>
+                <th>Chemistry</th>
+                <th>Chemistry</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>sk k</td>
+                <td>dk</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>sk</td>
+                <td>dk</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>sk</td>
+                <td>dk</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>sk</td>
+                <td>dk</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- buttons -->
+      <div class="container">
+        <h1 class="text-center">Buttons</h1>
+        <div class="container w-75 my-3">
+          <button class="btn btn-primary">border button</button>
+          <button class="btn btn-secondary">border button</button>
+          <button class="btn btn-success">border button</button>
+          <button class="btn btn-info">border button</button>
+          <button class="btn btn-warning">border button</button>
+          <button class="btn btn-danger">border button</button>
+        </div>
+        <h2 class="text-center">border/outline button</h2>
+        <div class="container w-75 my-3">
+          <button class="btn btn-outline-primary">border button</button>
+          <button class="btn btn-outline-secondary">border button</button>
+          <button class="btn btn-outline-success">border button</button>
+          <button class="btn btn-outline-info">border button</button>
+          <button class="btn btn-outline-warning">border button</button>
+          <button class="btn btn-outline-danger">border button</button>
+        </div>
+        <h2 class="text-center">large/small button</h2>
+        <div class="container w-75 my-3">
+          <button class="btn btn-outline-primary btn-lg">large button</button>
+          <button class="btn btn-outline-secondary btn-sm">small btn</button>
+          <button class="btn btn-success btn-lg" disabled>disabled large button</button> <br><br>
+          <button class="btn btn-success btn-lg btn-block">border button</button>
+        </div>
+        <h2 class="text-center">button group</h2>
+        <div class="container w-75 my-3">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary">3</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- cards  -->
+      <div class="container">
+        <h1>cards</h1>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <img src="../Images/sea.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">sea view</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum illum
+                  similique, eligendi doloribus consequuntur facere perferendis, fugiat ratione culpa
+                  delectus, voluptatem corrupti eveniet? Similique maiores enim nemo cumque ipsum.
+                </p>
+                <button type="button" class="btn btn-primary">Read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <h4 class="card-header">
+                Sea view
+              </h4>
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eveniet in aliquid
+                  dolore nihil earum consectetur iste quo architecto nisi odio dolores voluptatem
+                  repudiandae ipsum quisquam blanditiis, fugit repellendus consequatur.
+                </p>
+              </div>
+              <div class="card-footer">
+                lorem osojpsdfn aojf aisjj
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">list item 1</li>
+                <li class="list-group-item">list item 2</li>
+                <li class="list-group-item">list item 3</li>
+                <li class="list-group-item">list item 4</li>
+                <li class="list-group-item">list item 5</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <div class="card">
+              <img src="../Images/sky.jpg" alt="Sky" class="card-img">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Sky view</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet minima
+                  adipisci sapiente nesciunt vero voluptatibus exercitationem! Accusantium exercitationem
+                  sed ea doloremque cupiditate soluta, vero dolorum ullam nulla eligendi unde! Fugiat!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card deck  -->
+        <h4 class="mt-5">card deck</h4>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-header">
+              card 1
+            </div>
+            <div class="card-body">
+              <h4 class="card-subtitle">section</h4>
+              <p class="card-text">
+                loremsg lorem ipsum imps impo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nam, praesentium nihil veniam odit sint tempore voluptas iste odio libero ad nulla ab rerum
+                alias porro, eos eius ipsum voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing
+                ectetur inventore facere temporibus
+                pariatur corporis, distinctio vel reiciendis itaque cupiditate impedit voluptatem
+                consequuntur eos doloribus totam minus beatae officiis similique nesciunt. Nisi.
+              </p>
+            </div>
+            <div class="card-footer">
+              this is footer.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              card 1
+            </div>
+            <div class="card-body">
+              <h4 class="card-subtitle">section</h4>
+              <p class="card-text">
+                loremsg lorem ipsum imps impo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nam, praesentium nihil veniam odit sint tempore voluptas iste odio libero ad nulla ab rerum
+                alias porro, eos eius ipsum voluptatem!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              card 1
+            </div>
+            <div class="card-body">
+              <h4 class="card-subtitle">section</h4>
+              <p class="card-text">
+                loremsg lorem ipsum imps impo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nam, praesentium nihil veniam odit sint tempore voluptas iste odio libero ad nulla ab rerum
+                alias porro, eos eius ipsum voluptatem!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card group  -->
+        <h4 class="mt-5">card group</h4>
+        <div class="card-group">
+          <div class="card">
+            <div class="card-header">
+              card 1
+            </div>
+            <div class="card-body">
+              <h4 class="card-subtitle">section</h4>
+              <p class="card-text">
+                loremsg lorem ipsum imps impo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nam, praesentium nihil veniam odit sint tempore voluptas iste odio libero ad nulla ab rerum
+                alias porro, eos eius ipsum voluptatem!
+              </p>
+            </div>
+            <div class="card-footer">
+              this is footer.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              card 1
+            </div>
+            <div class="card-body">
+              <h4 class="card-subtitle">section</h4>
+              <p class="card-text">
+                loremsg lorem ipsum imps impo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nam, praesentium nihil veniam odit sint tempore voluptas iste odio libero ad nulla ab rerum
+                alias porro, eos eius ipsum voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Tempora, facere. Nam saepe voluptatibus debitis placeat velit laudantium ipsam dolorum
+                consequatur deserunt repudiandae veniam optio praesentium eligendi consectetur, explicabo
+                quae quo.
+              </p>
+            </div>
+            <div class="card-footer">
+              this is footer.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              card 1
+            </div>
+            <div class="card-body">
+              <h4 class="card-subtitle">section</h4>
+              <p class="card-text">
+                loremsg lorem ipsum imps impo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nam, praesentium nihil veniam odit sint tempore voluptas iste odio libero ad nulla ab rerum
+                alias porro, eos eius ipsum voluptatem!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card columns  -->
+        <h4 class="mt-5">card columns</h4>
+        <div class="card-columns">
+          <div class="card">
+            <div class="card-header">
+              card 1
+            </div>
+            <div class="card-body">
+              <h4 class="card-subtitle">section</h4>
+              <p class="card-text">
+                loremsg lorem ipsum imps impo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nam, praesentium nihil veniam odit sint tempore voluptas iste odio libero ad nulla ab rerum
+                alias porro, eos eius ipsum voluptatem!
+              </p>
+            </div>
+            <div class="card-footer">
+              this is footer.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              card 2
+            </div>
+            <div class="card-body">
+              <h4 class="card-subtitle">section</h4>
+              <p class="card-text">
+                loremsg lorem ipsum imps impo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nam, praesentium nihil veniam odit sint tempore voluptas iste odio libero ad nulla ab rerum
+                alias porro, eos eius ipsum voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Tempora, facere. Nam saepe voluptatibus debitis placeat velit laudantium ipsam dolorum
+                consequatur deserunt repudiandae veniam optio praesentium eligendi consectetur, explicabo
+                quae quo.
+              </p>
+            </div>
+            <div class="card-footer">
+              this is footer.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              card 3
+            </div>
+            <div class="card-body">
+              <h4 class="card-subtitle">section</h4>
+              <p class="card-text">
+                loremsg lorem ipsum imps impo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nam, praesentium nihil veniam odit sint tempore voluptas iste odio libero ad nulla ab rerum
+                alias porro, eos eius ipsum voluptatem!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">sun rise</h4>
+              <P class="card-text"> 4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis beatae
+                voluptates sint ad error repellendus sapiente modi, pariatur exercitationem, optio odio
+                veniam iusto recusandae aut illo? At quae enim modi!</P>
+            </div>
+            <img src="../Images/sun.jpeg" alt="sun" class="card-img-bottom">
+            <div class="card-footer">
+              sun rise
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              card 5
+            </div>
+            <div class="card-body">
+              <h4 class="card-subtitle">section</h4>
+              <p class="card-text">
+                loremsg lorem ipsum imps impo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nam, praesentium nihil veniam odit sint tempore voluptas iste odio libero ad nulla ab rerum
+                alias porro, eos eius ipsum voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Tempora, facere. Nam saepe voluptatibus debitis placeat velit laudantium ipsam dolorum
+                consequatur deserunt repudiandae veniam optio praesentium eligendi consectetur, explicabo
+                quae quo.
+              </p>
+            </div>
+            <div class="card-footer">
+              this is footer.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              card 6
+            </div>
+            <div class="card-body">
+              <h4 class="card-subtitle">section</h4>
+              <p class="card-text">
+                loremsg lorem ipsum imps impo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nam, praesentium nihil veniam odit sint tempore voluptas iste odio libero ad nulla ab rerum
+                alias porro, eos eius ipsum voluptatem!
+              </p>
+            </div>
+            <div class="card-footer">
+              this is footer.
+            </div>
+          </div>
+        </div>
+
+        <!-- cards example -->
+        <div class="container card-example">
+          <h2 class="mb-4">card example 1</h2>
+          <div class="row text-justify">
+            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div class="card">
+                <h4 class="card-header">card 1</h4>
+                <div class="card-body">
+                  lorem orkj Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+                  doloremque adipisci earum odio dolorum. Culpa quis a eos esse, nemo pariatur illo
+                  aliquid. Animi aspernatur atque aliquam impedit assumenda cumque.
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">list-item-1</li>
+                  <li class="list-group-item">list-item-2</li>
+                  <li class="list-group-item">list-item-3</li>
+                  <li class="list-group-item">list-item-4</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">title 1</h3>
+                  <h5 class="card-subtitle">subtitle 1</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                    suscipit doloribus voluptates. Exercitationem aut natus, corrupti eaque ab minima
+                    laborum earum rerum, at, dignissimos commodi tempora placeat corporis esse
+                    molestias.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div class="card">
+                <h4 class="card-header">Sky</h4>
+                <img src="../Images/sky.jpg" alt="Sky" class="card-img-top">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+                    sapiente quae nesciunt ut? Sunt, voluptate quae omnis quod, commodi distinctio
+                    veritatis labore perspiciatis sit tempore mollitia odio esse facere non?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div class="card border-primary text-primary">
+                <h4 class="card-header border-primary">card 4</h4>
+                <div class="card-body">
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci omnis voluptatem
+                    error alias, nisi possimus corrupti, architecto eius sunt ipsum nesciunt, officia
+                    ullam dignissimos quisquam dolorem maiores accusantium cupiditate ducimus?
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div class="card bg-dark text-light border-light">
+                <h4 class="card-header border-light">card 5</h4>
+                <div class="card-body">
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor sit ducimus
+                    vel quisquam nobis beatae nihil unde incidunt commodi laboriosam tempora, porro
+                    necessitatibus quam totam consequuntur suscipit iste quod.
+                  </div>
+                </div>
+                <div class="card-footer border-light">
+                  footer of card
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div class="card">
+                <h4 class="card-header">card 6</h4>
+                <div class="card-body">
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+                    quaerat ex nihil laborum, soluta omnis. Quae eius, dolor cum exercitationem a nihil
+                    amet atque perferendis ex saepe reiciendis velit nesciunt.
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">list</li>
+                  <li class="list-group-item">list</li>
+                  <li class="list-group-item">list</li>
+                  <li class="list-group-item">list</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal Practice -->
+      <div class="container">
+        <h2 class="mt-5">Modal</h2>
+        <!-- here data-target attribute of button and th eid attribute of the .modal class div is always same -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+          Launch demo modal
+        </button>
+
+        <!-- data-dissmiss attribute is used to define which div is invisible when the click btn  -->
+        <div class="modal fade" id="modal1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                5 = 5? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestiae quisquam
+                doloribus magni explicabo, cupiditate vero earum veniam placeat velit quas enim doloremque
+                quo beatae omnis similique, reprehenderit cumque repellat!lorem*9 lorem Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Distinctio dolores reiciendis doloribus ipsa! Itaque
+                recusandae inventore ipsam expedita sapiente, libero quam accusantium veniam nihil similique
+                molestias, facilis modi dignissimos sint!
+                Fugiat illo nemo dolore! Soluta saepe, ex optio sunt mollitia sapiente error quia distinctio
+                iste aut. Ob
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- accordion -->
+      <div class="container">
+        <h2 class="my-4">Accordion</h2>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Collapsible Group Item #1
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                squid. 3 wolf
+
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Collapsible Group Item #2
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+              ur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+              raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+              VHS.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                Collapsible Group Item #3
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+              squid. 3 wolf
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+              raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+              VHS.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- dropdowns -->
+      <div class="container">
+        <h2 class="my-4">dropdown</h2>
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle btn btn-primary" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">show</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <div class="dropdown my-3">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">dropdown</button>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">drop 1</a>
+            <a href="#" class="dropdown-item">drop 1</a>
+            <a href="#" class="dropdown-item">drop 1</a>
+            <a href="#" class="dropdown-item">drop 1</a>
+          </div>
+        </div>
+        <div class="btn-group dropright">
+          <button type="button" class="btn btn-primary">
+            dropdown
+          </button>
+          <button type="button" class="btn btn-primary dropdown-toggle dropdown-tpggle-split" data-toggle="dropdown">
+            <span class="sr-only"></span>
+          </button>
+          <div class="dropdown-menu">
+            <h6 class="dropdown-header">itemset</h6>
+            <a href="#" class="dropdown-item">item 1</a>
+            <a href="#" class="dropdown-item">item 1</a>
+            <a href="#" class="dropdown-item">item 1</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">item 1</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Breadcrumb -->
+      <div class="container mt-5">
+        <h3 class="my-3">Breadcrumb</h3>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">About <span class="badge badge-primary">1</span></li>
+          </ol>
+        </nav>
+
+        <div class="card-deck">
+          <div class="card w-50 mb-2">
+            <div class="card-header pb-0">
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active">About</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, ea aperiam dicta saepe
+                odio
+                nobis. Ut natus voluptate ab modi quibusdam est vero saepe ex? Nisi pariatur ipsa eligendi
+                ut.
+              </p>
+            </div>
+          </div>
+          <div class="card w-50 mb-2">
+            <div class="card-header pb-0">
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active">About <span class="badge badge-primary">1</span></li>
+                </ol>
+              </nav>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, ea aperiam dicta saepe
+                odio
+                nobis. Ut natus voluptate ab modi quibusdam est vero saepe ex? Nisi pariatur ipsa eligendi
+                ut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- jumbotron -->
+      <div class="container">
+        <div class="jumbotron">
+          <h4 class="display-4 mb-5">jumbotron</h4>
+          <p>lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, maiores. Alias in
+            perferendis similique fugiat nemo neque! Repellat nemo illum incidunt eius maxime inventore
+            blanditiis et. Nostrum vero corrupti dolor.</p>
+        </div>
+      </div>
+
+      <!-- list-group -->
+      <div class="container mb-3">
+        <h2 class="mb-4">Lists</h2>
+        <div class="d-flex justify-content-around align-items-center">
+          <ul class="list-group w-25">
+            <li class="list-group-item">list 1</li>
+            <li class="list-group-item">list 2</li>
+            <li class="list-group-item">list 3</li>
+            <li class="list-group-item">list 4</li>
+          </ul>
+          <ul class="list-group list-group-flush w-25">
+            <li class="list-group-item">list 1 </li>
+            <li class="list-group-item disabled">disabled</li>
+            <li class="list-group-item active">active</li>
+            <li class="list-group-item">list 4</li>
+          </ul>
+          <ul class="list-group w-25">
+            <li class="list-group-item list-group-item-action">list 1</li>
+            <li class="list-group-item list-group-item-danger">list 2</li>
+            <li class="list-group-item">list 3</li>
+            <li class="list-group-item">list 4</li>
+          </ul>
+        </div>
+        <ul class="list-group list-group-flush my-3">
+          <li class="list-group-item">1</li>
+          <li class="list-group-item">2</li>
+          <li class="list-group-item">3</li>
+          <li class="list-group-item">4</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- nav tabs  -->
+    <div class="container card-example">
+      <h2>navtabs</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="nav flex-sm-column nav-pills">
+            <a class="nav-link active" data-toggle="pill" href="#1">Home</a>
+            <a class="nav-link" data-toggle="pill" href="#2">Profile</a>
+            <a class="nav-link" data-toggle="pill" href="#3">Messages</a>
+            <a class="nav-link" data-toggle="pill" href="#4">Settings</a>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="1">
+              <p>1 . Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perferendis illum,
+                voluptatem
+                ullam ut aspernatur suscipit tenetur, modi quam, recusandae repudiandae rem ex. In
+                recusandae hic aspernatur magni placeat minus!
+                Blanditiis iure optio, ullam illum quisquam quas voluptatibus, quos tempore
+                veritatis
+                officia asperiores suscipit odio hic ab voluptatem modi assumenda, repellat earum
+                veniam
+                obcaecati repudiandae eligendi illo alias tenetur! Dolores.
+                Nobis eum blanditiis ipsam amet cum sint quasi voluptatem, explicabo laboriosam hic
+                animi
+                itaque ducimus autem? Ut vel nam odit distinctio aliquid, perferendis perspiciatis
+                corrupti
+                molestias non pariatur accusantium voluptates!
+                Esse blanditiis neque quaerat repellat autem ratione! Esse ex enim fugit at fuga
+                exercitationem repellendus corrupti atque, unde, minus a doloremque animi totam,
+                maxime
+                tempora quae consectetur necessitatibus dolore ullam!</p>
+            </div>
+            <div class="tab-pane fade" id="2">
+              <p>2 . Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perferendis illum,
+                voluptatem
+                ullam ut aspernatur suscipit tenetur, modi quam, recusandae repudiandae rem ex. In
+                recusandae hic aspernatur magni placeat minus!
+                Blanditiis iure optio, ullam illum quisquam quas voluptatibus, quos tempore
+                veritatis
+                officia asperiores suscipit odio hic ab voluptatem modi assumenda, repellat earum
+                veniam
+                obcaecati repudiandae eligendi illo alias tenetur! Dolores.
+                Nobis eum blanditiis ipsam amet cum sint quasi voluptatem, explicabo laboriosam hic
+                animi
+                itaque ducimus autem? Ut vel nam odit distinctio aliquid, perferendis perspiciatis
+                corrupti
+                molestias non pariatur accusantium voluptates!
+                Esse blanditiis neque quaerat repellat autem ratione! Esse ex enim fugit at fuga
+                exercitationem repellendus corrupti atque, unde, minus a doloremque animi totam,
+                maxime
+                tempora quae consectetur necessitatibus dolore ullam!</p>
+            </div>
+            <div class="tab-pane fade" id="3">
+              <p> 3 . Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perferendis
+                illum,
+                voluptatem
+                ullam ut aspernatur suscipit tenetur, modi quam, recusandae repudiandae rem ex. In
+                recusandae hic aspernatur magni placeat minus!
+                Blanditiis iure optio, ullam illum quisquam quas voluptatibus, quos tempore
+                veritatis
+                officia asperiores suscipit odio hic ab voluptatem modi assumenda, repellat earum
+                veniam
+                obcaecati repudiandae eligendi illo alias tenetur! Dolores.
+                Nobis eum blanditiis ipsam amet cum sint quasi voluptatem, explicabo laboriosam hic
+                animi
+                itaque ducimus autem? Ut vel nam odit distinctio aliquid, perferendis perspiciatis
+                corrupti
+                molestias non pariatur accusantium voluptates!
+                Esse blanditiis neque quaerat repellat autem ratione! Esse ex enim fugit at fuga
+                exercitationem repellendus corrupti atque, unde, minus a doloremque animi totam,
+                maxime
+                tempora quae consectetur necessitatibus dolore ullam!</p>
+            </div>
+            <div class="tab-pane fade" id="4">
+              <p>4 . Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perferendis illum,
+                voluptatem
+                ullam ut aspernatur suscipit tenetur, modi quam, recusandae repudiandae rem ex. In
+                recusandae hic aspernatur magni placeat minus!
+                Blanditiis iure optio, ullam illum quisquam quas voluptatibus, quos tempore
+                veritatis
+                officia asperiores suscipit odio hic ab voluptatem modi assumenda, repellat earum
+                veniam
+                obcaecati repudiandae eligendi illo alias tenetur! Dolores.
+                Nobis eum blanditiis ipsam amet cum sint quasi voluptatem, explicabo laboriosam hic
+                animi
+                itaque ducimus autem? Ut vel nam odit distinctio aliquid, perferendis perspiciatis
+                corrupti
+                molestias non pariatur accusantium voluptates!
+                Esse blanditiis neque quaerat repellat autem ratione! Esse ex enim fugit at fuga
+                exercitationem repellendus corrupti atque, unde, minus a doloremque animi totam,
+                maxime
+                tempora quae consectetur necessitatibus dolore ullam!</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbars -->
+    <h2 class="ml-4">navbar</h2>
+    <nav class="navbar navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">Navbar</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarContent">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Dropdown</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">1</a>
+              <a href="#" class="dropdown-item">2</a>
+              <a href="#" class="dropdown-item">3</a>
+              <a href="#" class="dropdown-item">4</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav><br>
+    <h4>expand in small and above</h4>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">Navbar</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarContent">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Dropdown</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">1</a>
+              <a href="#" class="dropdown-item">2</a>
+              <a href="#" class="dropdown-item">3</a>
+              <a href="#" class="dropdown-item">4</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav><br>
+    <h4>expand in medium and above</h4>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">Navbar</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarContent">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Dropdown</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">1</a>
+              <a href="#" class="dropdown-item">2</a>
+              <a href="#" class="dropdown-item">3</a>
+              <a href="#" class="dropdown-item">4</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav><br>
+    <h4>exapnd in large and above</h4>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Dropdown</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">1</a>
+                <a href="#" class="dropdown-item">2</a>
+                <a href="#" class="dropdown-item">3</a>
+                <a href="#" class="dropdown-item">4</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><br>
+    <h4>expand in extra large</h4>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">Navbar</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarContent">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Dropdown</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">1</a>
+              <a href="#" class="dropdown-item">2</a>
+              <a href="#" class="dropdown-item">3</a>
+              <a href="#" class="dropdown-item">4</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav><br>
+
+    <!-- popovers -->
+    <div class="container my-3">
+      <h2 class="mb-2">popovers</h2>
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on top
+      </button>
+
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on right
+      </button>
+
+      <button type="button" class="btn btn-secondary pop" data-container="body" data-toggle="popover"
+        data-placement="bottom" data-content="Vivamus
+            sagittis lacus vel augue laoreet rutrum faucibus.">
+        Popover on bottom
+      </button>
+
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus">
+        Popover on left
+      </button>
+    </div>
+
+    <!-- pagination -->
+    <div class="container">
+      <h2 class="my-3">pagination</h2>
+      <ul class="pagination pagination-lg">
+        <span class="page-item">
+          <a href="#" class="page-link disabled">Previous</a>
+        </span>
+        <span class="page-item">
+          <a href="#" class="page-link">1</a>
+        </span>
+        <span class="page-item active">
+          <a href="#" class="page-link">2</a>
+        </span>
+        <span class="page-item">
+          <a href="#" class="page-link">3</a>
+        </span>
+        <span class="page-item">
+          <a href="#" class="page-link">Next</a>
+        </span>
+      </ul>
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a href="#" class="page-link">
+            <span>&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">1</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">2</a>
+        </li>
+        <li class="page-item active">
+          <a href="#" class="page-link">3</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">4</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">
+            <span>&raquo;</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="pagination pagination-sm justify-content-end">
+        <li class="page-item">
+          <a href="#" class="page-link">
+            <span>&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">1</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">2</a>
+        </li>
+        <li class="page-item active">
+          <a href="#" class="page-link">3</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">4</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">
+            <span>&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- progressbar -->
+    <div class="container my-3">
+      <h2 class="mb-2">Progressbars</h2>
+      <div class="progress w-50">
+        <div class="progress-bar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+        </div>
+      </div>
+      <br>
+      <div class="progress">
+        <div class="progress-bar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-success" style="width: 16%" aria-valuenow="16" aria-valuemin="0"
+          aria-valuemax="100"></div>
+      </div>
+      <br>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%;" aria-valuenow="70"
+          aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+
+    <!-- bootstrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+    <script>
+      // in popovers we need to enable first.
+      $(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+    </script>
+  </body>
+
+</html>

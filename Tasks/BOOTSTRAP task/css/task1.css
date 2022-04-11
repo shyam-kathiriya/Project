@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+}
+
+.bg-grey {
+  background-color: #f5f6fa;
+  height: 100%;
+}
+
+.avtar {
+  width: 120px;
+  height: 120px;
+}
+
+.container {
+  min-width: 87%;
+}
+
+label {
+  font-weight: 500;
+  color: #444;
+}
+
+@media screen and (max-width: 992px) {
+  .bg-grey {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    /* width: 100%; */
+  }
+}

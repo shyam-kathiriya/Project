@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" width="29" height="29">
+	<title>Ellipse 3</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #0d1935 } 
+	</style>
+	<path id="Shape 17" class="s0" d="m2.86 23.28v-2.37c5.55-1.79 2.5-11.93 7.82-14.98c0.73-0.42 1.19-1.2 1.19-2.05c0 0 0 0 0 0c0-1.32 1.07-2.39 2.39-2.39c1.32 0 2.39 1.07 2.39 2.39c0 0 0 0 0 0c0 0.85 0.45 1.63 1.18 2.05c5.32 3.05 2.26 13.19 7.82 14.98v2.37h-22.78zm11.42 5.23c-1.8 0-3.26-1.46-3.26-3.26h6.51c0 1.8-1.46 3.26-3.26 3.26z" />
+</svg>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      table.timetable {
+        width: 400px;
+        height: 200px;
+        text-align: center;
+      }
+
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+    </style>
+    <title>Tables</title>
+  </head>
+
+  <body>
+    <h1>HTML tables</h1>
+    <table border="1" class="timetable">
+      <caption>table 1. Time table</caption>
+      <thead>
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AMC</td>
+          <td>DF</td>
+          <td>ML</td>
+          <td>AI</td>
+          <td>IS</td>
+        </tr>
+        <tr>
+          <td>AI</td>
+          <td>DF</td>
+          <td>MCWC</td>
+          <td>PPS</td>
+          <td>JAVA</td>
+        </tr>
+        <tr>
+          <td>AML</td>
+          <td>IR</td>
+          <td>ANDROID</td>
+          <td>OOP-1</td>
+          <td>IC</td>
+        </tr>
+        <tr>
+          <td colspan="6" style="text-align: center"> break</td>
+        </tr>
+        <tr>
+          <td rowspan="2">ML LAB</td>
+          <td>AI</td>
+          <td>BME</td>
+          <td>BEE</td>
+          <td>OOP-1</td>
+        </tr>
+        <tr>
+          <td>PS</td>
+          <td rowspan="2">AI LAB</td>
+          <td>MCWC</td>
+          <td>ML</td>
+        </tr>
+        <tr>
+          <td>MCWC</td>
+          <td>OOP-1</td>
+          <td>AML</td>
+          <td>ML</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <table width="400px">
+      <colgroup>
+        <col span="2" style="background-color: red">
+        <col style="background-color: yellow">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile no.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Shyam</td>
+          <td>abc@gmail.com</td>
+          <td>+919559665436</td>
+        </tr>
+        <tr>
+          <td>Nirav</td>
+          <td>xoi@dkkl.com</td>
+          <td>+950665563312</td>
+        </tr>
+        <tr>
+          <td>Ruchit</td>
+          <td>Ruchit@opwp.com</td>
+          <td>+916656226012</td>
+        </tr>
+      </tbody>
+      <caption>table 2. Details</caption>
+    </table>
+
+
+  </body>
+
+</html>

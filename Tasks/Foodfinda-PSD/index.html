@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+    <!-- goodle fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet" />
+
+    <!-- fontawesome v5 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./asserts/css/style.css" />
+
+    <title>Foodfinda</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <!-- top-nav -->
+        <div class="top-nav">
+          <a href="tel:+0123456789" class="phone">
+            <i class="fas fa-phone-alt"></i> &nbsp; CALL: +0123456789
+          </a>
+
+          <div class="logo-box">
+            <img src="./asserts/media/images/logo-png.png" alt="foodfinda" class="logo" />
+            <a href="#" class="logo-text">FOOFFINDA</a>
+          </div>
+
+          <button class="navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+
+          <a href="mailto:example@xyz.com" class="email">
+            <i class="fas fa-envelope"></i> &nbsp; EMAIL: Demo@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="container overlay">
+        <header>
+          <!-- navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark mr-0">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto text-lg-start text-center">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contacts</a>
+                </li>
+                <li class="nav-item ml-lg-5 m-0">
+                  <a class="nav-link text-white" href="#">Login</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                  <a class="nav-link text-white" href="#"><i class="fas fa-search"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!--  hero carousel -->
+          <div class="hero">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="hero-text">
+                    <h1 class="primary-heading text-center">
+                      Finds the best restaurants cafes and bars in
+                    </h1>
+                    <p class="city">Your City</p>
+                  </div>
+                  <div class="hero-form">
+                    <form action="">
+                      <div class="location-box">
+                        <input type="text" placeholder="Select Location" />
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="search-box">
+                        <input type="text" placeholder="Search" id="search" />
+                        <i class="fas fa-search"></i>
+                      </div>
+                    </form>
+                    <div class="text-center">
+                      <a href="#" class="btn btn-green btn-lg mt-5">
+                        Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="hero-text">
+                    <h1 class="primary-heading text-center">
+                      2 Finds the best restaurants cafes and bars in
+                    </h1>
+                    <p class="city">Your City</p>
+                  </div>
+                  <div class="hero-form">
+                    <form action="">
+                      <div class="location-box">
+                        <input type="text" placeholder="Select Location" />
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="search-box">
+                        <input type="search" placeholder="Search" />
+                        <i class="fas fa-search"></i>
+                      </div>
+                    </form>
+                    <div class="text-center">
+                      <a href="#" class="btn btn-green btn-lg mt-5">
+                        Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="hero-text">
+                    <h1 class="primary-heading text-center">
+                      3 Finds the best restaurants cafes and bars in
+                    </h1>
+                    <p class="city">Your City</p>
+                  </div>
+                  <div class="hero-form">
+                    <form action="">
+                      <div class="location-box">
+                        <input type="text" placeholder="Select Location" />
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="search-box">
+                        <input type="search" placeholder="Search" />
+                        <i class="fas fa-search"></i>
+                      </div>
+                    </form>
+                    <div class="text-center">
+                      <a href="#" class="btn btn-green btn-lg mt-5">
+                        Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev my-auto" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                </span>
+              </a>
+              <a class="carousel-control-next my-auto" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                </span>
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <!-- main-sections  -->
+        <main>
+          <!-- quick-search section -->
+          <section class="quick-search">
+            <div class="container-inner">
+              <h2 class="section-heading">Quick Searches</h2>
+              <div class="row">
+                <div class="col-md-4 col-lg-2">
+                  <div class="quick-boxs">
+                    <div class="quick-box">
+                      <img src="./asserts/media/images/breakfast.png" alt="breakfast" />
+                    </div>
+                    <p class="quick-text">breakfast</p>
+                    <a href="#" class="btn btn-orange">SEE MORE</a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <div class="quick-boxs">
+                    <div class="quick-box">
+                      <img src="./asserts/media/images/delivery.png" alt="delivery" />
+                    </div>
+                    <p class="quick-text">delivery</p>
+                    <a href="#" class="btn btn-green">SEE MORE</a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <div class="quick-boxs">
+                    <div class="quick-box">
+                      <img src="./asserts/media/images/dinner.png" alt="dinner" />
+                    </div>
+                    <p class="quick-text">dinner</p>
+                    <a href="#" class="btn btn-green">SEE MORE</a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <div class="quick-boxs">
+                    <div class="quick-box">
+                      <img src="./asserts/media/images/cafes.png" alt="cafes" />
+                    </div>
+                    <p class="quick-text">cafes</p>
+                    <a href="#" class="btn btn-green">SEE MORE</a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <div class="quick-boxs">
+                    <div class="quick-box drinks">
+                      <img src="./asserts/media/images/drinks.png" alt="drinks" />
+                    </div>
+                    <p class="quick-text">drinks</p>
+                    <a href="#" class="btn btn-green">SEE MORE</a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <div class="quick-boxs">
+                    <div class="quick-box">
+                      <img src="./asserts/media/images/dining.png" alt="dining" />
+                    </div>
+                    <p class="quick-text">dining</p>
+                    <a href="#" class="btn btn-green">SEE MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- feature section -->
+          <section class="feature-section">
+            <div class="container-inner">
+              <h2 class="section-heading">Collection food in citys</h2>
+              <div class="row mt-5">
+                <div class="col-lg-5">
+                  <div class="feature-img-box">
+                    <img src="./asserts/media/images/city-1.jpg" alt="feature-1" />
+                  </div>
+                </div>
+                <div class="col-lg-7 my-auto">
+                  <div class="feature-text-box">
+                    <p class="sub-heading">This Week going</p>
+                    <p class="feature-text">
+                      long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                      The point of using Lorem Ipsum is that it has a
+                      more-or-less normal distribution of letters, as opposed
+                    </p>
+                    <a href="#" class="btn btn-green">READ MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-lg-5">
+                  <div class="feature-img-box">
+                    <img src="./asserts/media/images/city-2.jpg" alt="feature-1" />
+                  </div>
+                </div>
+                <div class="col-lg-7 my-auto">
+                  <div class="feature-text-box">
+                    <p class="sub-heading">Just Delivery Food</p>
+                    <p class="feature-text">
+                      long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                      The point of using Lorem Ipsum is that it has a
+                      more-or-less normal distribution of letters, as opposed
+                    </p>
+                    <a href="#" class="btn btn-green">READ MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-lg-5">
+                  <div class="feature-img-box">
+                    <img src="./asserts/media/images/city-1.jpg" alt="feature-1" />
+                  </div>
+                </div>
+                <div class="col-lg-7 my-auto">
+                  <div class="feature-text-box">
+                    <p class="sub-heading">Newly Opend Cafe</p>
+                    <p class="feature-text">
+                      long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                      The point of using Lorem Ipsum is that it has a
+                      more-or-less normal distribution of letters, as opposed
+                    </p>
+                    <a href="#" class="btn btn-green">READ MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- subscribe section -->
+          <section class="subscribe-section">
+            <div class="container-inner">
+              <div class="row">
+                <div class="col-lg-8 my-auto order-lg-1 order-2">
+                  <div class="subscribe-text-box">
+                    <p class="section-heading">
+                      <span class="text-dark"> Get the </span><br />
+                      Food Finda App
+                    </p>
+                    <p class="subscribe-text">
+                      long established fact that a reader will be distracted by
+                      the readable content of a page when looking at its layout.
+                      The point of using Lorem Ipsum is that it has a
+                      more-or-less normal distribution of letters, as
+                    </p>
+                    <div class="subscribe-btns mb-5">
+                      <a href="#">
+                        <img src="./asserts/media/images/googleplay.png" alt="googleplaystore" /></a>
+                      <a href="#">
+                        <img src="./asserts/media/images/appstore.png" alt="appstore" /></a>
+                    </div>
+                    <a href="#" class="btn btn-white btn-lg mt-5">
+                      Download Now</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 order-lg-2 order-1 d-flex align-items-center justify-content-center">
+                  <div class="subscribe-img-box">
+                    <img src="./asserts/media/images/iphone-bg.jpg" alt="iphone-frame" class="subscribe-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- review section  -->
+          <section class="review-section">
+            <div class="container-inner">
+              <h2 class="section-heading">Customers Says</h2>
+              <!-- customer carousel -->
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="customer-name">1 Loily Mark</p>
+                            <div class="customer-card">
+                              <p class="customer-text">
+                                now use Lorem Ipsum as their default model text,
+                                and a search for 'loremnow use Lorem Ipsum as
+                                their default model text, and a search for
+                                'lorem
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="customer-name">Den Mark</p>
+                            <div class="customer-card">
+                              <p class="customer-text">
+                                now use Lorem Ipsum as their default model text,
+                                and a search for 'loremnow use Lorem Ipsum as
+                                their default model text, and a search for
+                                'lorem
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="customer-name">Johnshon Mark</p>
+                            <div class="customer-card">
+                              <p class="customer-text">
+                                now use Lorem Ipsum as their default model text,
+                                and a search for 'loremnow use Lorem Ipsum as
+                                their default model text, and a search for
+                                'lorem
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="customer-name">2 Loily Mark</p>
+                            <div class="customer-card">
+                              <p class="customer-text">
+                                now use Lorem Ipsum as their default model text,
+                                and a search for 'loremnow use Lorem Ipsum as
+                                their default model text, and a search for
+                                'lorem
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="customer-name">Den Mark</p>
+                            <div class="customer-card">
+                              <p class="customer-text">
+                                now use Lorem Ipsum as their default model text,
+                                and a search for 'loremnow use Lorem Ipsum as
+                                their default model text, and a search for
+                                'lorem
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="customer-name">Johnshon Mark</p>
+                            <div class="customer-card">
+                              <p class="customer-text">
+                                now use Lorem Ipsum as their default model text,
+                                and a search for 'loremnow use Lorem Ipsum as
+                                their default model text, and a search for
+                                'lorem
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="customer-name">3 Loily Mark</p>
+                            <div class="customer-card">
+                              <p class="customer-text">
+                                now use Lorem Ipsum as their default model text,
+                                and a search for 'loremnow use Lorem Ipsum as
+                                their default model text, and a search for
+                                'lorem
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="customer-name">Den Mark</p>
+                            <div class="customer-card">
+                              <p class="customer-text">
+                                now use Lorem Ipsum as their default model text,
+                                and a search for 'loremnow use Lorem Ipsum as
+                                their default model text, and a search for
+                                'lorem
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <p class="customer-name">Johnshon Mark</p>
+                            <div class="customer-card">
+                              <p class="customer-text">
+                                now use Lorem Ipsum as their default model text,
+                                and a search for 'loremnow use Lorem Ipsum as
+                                their default model text, and a search for
+                                'lorem
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- carousel btn  -->
+              <div class="text-center d-flex justify-content-center align-items-center mt-5">
+                <a class="carousel-control-prev2" href="#carouselExampleControls" role="button" data-slide="prev"><i
+                    class="fas fa-arrow-left"></i></a>
+                <a class="carousel-control-next2" href="#carouselExampleControls" role="button" data-slide="next"><i
+                    class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </section>
+
+          <!-- contact section -->
+          <section class="contact-section">
+            <div class="container-inner form-bg p-5">
+              <h2 class="section-heading">Get In Touch</h2>
+              <div class="mx-auto w-lg-100 w-75">
+                <form action="">
+                  <input type="text" class="form-control w-100" placeholder="Name" />
+                  <input type="email" class="form-control w-100" placeholder="Email" />
+                  <input type="text" class="form-control w-100" placeholder="Phone Number" />
+                  <textarea name="msg" id="msg" class="form-control w-100" rows="4" placeholder="Message"></textarea>
+                  <div class="text-center">
+                    <input type="submit" class="btn btn-green btn-lg" value="SEND" />
+                  </div>
+                </form>
+                <div class="order-box">
+                  <p>OREDER best food at a time</p>
+                  <a href="#" class="btn btn-green text-uppercase">
+                    Order now</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- footer  -->
+        <footer class="footer">
+          <div class="container-inner">
+            <div class="row">
+              <div class="col-md-6 col-lg-3 about-col my-4">
+                <a href="#" class="footer-logo">FOODFINDA</a>
+                <p class="about-text">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-3 nav-col my-4">
+                <div class="ml-0 ml-lg-5">
+                  <p class="sub-heading">NAVIGATION</p>
+                  <ul class="footer-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Features</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 contact-col my-4">
+                <p class="sub-heading">CONTACT INFO</p>
+                <address>
+                  <p class="text-green">Office Address:</p>
+                  <p class="address-line d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt mr-3"></i>
+                    <span> Lorem ipsom, New York, NY 36564 </span>
+                  </p>
+                  <p class="text-green mt-5">Customer Service</p>
+                  <div class="contact">
+                    <a href="tel:+0123456789"><i class="fas fa-phone-alt mr-3"></i>
+                      <span> (+01 1234567890)</span>
+                    </a>
+                    <a href="mailto:demo@abc.com"><i class="fas fa-envelope mr-3"></i>
+                      <span> demp@abc.com</span>
+                    </a>
+                  </div>
+                </address>
+              </div>
+              <div class="col-md-6 col-lg-3 discover-col my-4">
+                <p class="sub-heading">DISCOVER</p>
+                <ul class="discover-link">
+                  <li class="active"><a href="#">Help</a></li>
+                  <li><a href="#">How it Works</a></li>
+                  <li><a href="#">Location</a></li>
+                  <li><a href="#">Subscribe</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="social-icons">
+                  <a href="#"> <i class="fab fa-facebook-square"></i> </a>
+                  <a href="#"> <i class="fab fa-twitter-square"></i> </a>
+                  <a href="#"> <i class="fab fa-instagram-square"></i> </a>
+                  <a href="#"> <i class="fab fa-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bar">
+            <p class="copyright-text">
+              © 2020 All Rights Reserved. Design by Free Html Templates
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- bootstrap js  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+
+    <script>
+      $(".carousel").carousel({
+        interval: 200000,
+      });
+    </script>
+  </body>
+
+</html>

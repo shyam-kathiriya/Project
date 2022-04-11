@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form - task</title>
+  </head>
+
+  <body>
+    <h1>form task</h1>
+    <form>
+      <label for="userID">User ID</label>
+      <input type="text" value="IN302993" id="userID"> <br><br>
+
+      <label for="username">Username*</label>
+      <input type="email" placeholder="abc@xyz.com" id="username" required> <br><br>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+      <span>Note: minimum 8 character required</span> <br><br>
+
+      <label> Gender</label><br>
+      <input type="radio" value="male" id="male" name="gender" checked> <label for="male">Male</label><br>
+      <input type="radio" value="female" id="female" name="gender"> <label for="female">Female</label> <br><br>
+
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="argentina" selected>Argentina</option>
+        <option value="dubai">Dubai</option>
+        <option value="paris">Paris</option>
+        <option value="brazil" disabled> Brazil</option>
+        <option value="jordan" disabled> Jordan</option>
+      </select>
+      <br><br>
+
+      <label>Known language:</label> <br>
+      <input type="checkbox" value="hindi" id="hindi" name="language">
+      <label for="hindi"> Hindi</label><br>
+      <input type="checkbox" value="gujarati" id="gujarati" name="language">
+      <label for="gujarati">Gujarati</label><br>
+      <input type="checkbox" value="english" id="english" name="language">
+      <label for="english"> English</label>
+      <br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </body>
+
+</html>

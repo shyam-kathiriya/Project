@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap v4 cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/task1.css">
+
+    <title>Bootstrap Task 1</title>
+  </head>
+
+  <body>
+
+    <div class="container-fluid bg-grey p-sm-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 d-flex align-items-stretch">
+            <div class="card border-0">
+              <div class="card-body text-center p-5">
+                <img src="../../Images/avatar7.png" alt="avatar" class="rounded-circle avtar">
+                <h4 class="mt-4 card-title">Yuki Hayashi</h4>
+                <p class="text-muted card-text">yuki@maxwell.com</p>
+
+                <div class="about mt-5">
+                  <h4 class="text-primary">About</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Dolorum
+                    voluptatibus quaerat, numqpossimus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 mt-lg-0 mt-4 d-flex align-items-stretch">
+            <div class="card border-0 w-100">
+              <div class="card-body">
+                <!-- personal details form -->
+                <div class="my-3">
+                  <h4 class="text-primary mb-4">Personal Details</h4>
+                  <form>
+                    <div class="form-row">
+                      <div class="col-lg-6 form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" class="form-control" id="fullname" placeholder="Enter full name">
+                      </div>
+                      <div class="col-lg-6 form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email address">
+                      </div>
+                      <div class="col-lg-6 form-group mt-lg-3">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                      </div>
+                      <div class="col-lg-6 form-group mt-lg-3">
+                        <label for="website">Website URL</label>
+                        <input type="text" class="form-control" id="website" placeholder="Webstie url">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- address form -->
+                <div class="my-3">
+                  <h4 class="text-primary mb-4">Address</h4>
+                  <form>
+                    <div class="form-row">
+                      <div class="col-lg-6 form-group">
+                        <label for="street">Street</label>
+                        <input type="text" class="form-control" id="street" placeholder="Street">
+                      </div>
+                      <div class="col-lg-6 form-group">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="Enter city">
+                      </div>
+                      <div class="col-lg-6 form-group mt-lg-3">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" placeholder="Enter State">
+                      </div>
+                      <div class="col-lg-6 form-group mt-lg-3">
+                        <label for="zip">Zip</label>
+                        <input type="text" class="form-control" id="zip" placeholder="Enter ZIP">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- buttons -->
+                <div class="d-lg-flex justify-content-lg-end">
+                  <button type="button" class="btn btn-secondary btn-lg mr-3">Cancel</button>
+                  <button type="button" class="btn btn-primary btn-lg">Update</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- bootstrap js  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

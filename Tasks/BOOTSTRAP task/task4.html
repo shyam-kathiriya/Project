@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- bootstrap v4 cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/task4.css">
+
+    <title>Bootstrap Task 4</title>
+  </head>
+
+  <body>
+
+    <div class="container p-2">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="mb-3">MANAGE USERS</h4>
+        </div>
+        <div class="table-responsive p-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>NAME</th>
+                <th>OCCUPATION</th>
+                <th>EMAIL</th>
+                <th>ADDED</th>
+                <th>CATEGORY</th>
+                <th>MANAGE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <h6 class="m-0 text-nowrap">Danial Kristion</h6>
+                  <p class="text-muted text-nowrap">Texas, United States</p>
+                </td>
+                <td>
+                  <span class="text-muted text-nowrap">Visual Designer</span> <br>
+                  <span class="text-muted text-nowrap">Past Teacher</span>
+                </td>
+                <td>
+                  <span class="text-muted text-nowrap">damial@website.com</span> <br>
+                  <span class="text-muted text-nowrap">900-009-8908-928</span>
+                </td>
+                <td>
+                  <span class="text-muted text-nowrap">12 March 2012</span> <br>
+                  <span class="text-muted text-nowrap">10:20 AM</span>
+                </td>
+                <td>
+                  <select name="category" id="select1" class="form-control select-category">
+                    <option value="0" selected>Moduler</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </td>
+                <td class="text-nowrap">
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-key-fill"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i class="bi bi-trash"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle">
+                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                    </buton>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <h6 class="m-0">Kris Welly</h6>
+                  <p class="text-muted">Texas, United States</p>
+                </td>
+                <td>
+                  <span class="text-muted">Visual Designer</span> <br>
+                  <span class="text-muted">Past Teacher</span>
+                </td>
+                <td>
+                  <span class="text-muted text-nowrap">damial@website.com</span> <br>
+                  <span class="text-muted">900-009-8908-928</span>
+                </td>
+                <td>
+                  <span class="text-muted">12 March 2012</span> <br>
+                  <span class="text-muted">10:20 AM</span>
+                </td>
+                <td>
+                  <select name="category" id="select1" class="form-control select-category">
+                    <option value="0" selected>Moduler</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-key-fill"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i class="bi bi-trash"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle">
+                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                    </buton>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <h6 class="m-0">John Doe</h6>
+                  <p class="text-muted">Texas, United States</p>
+                </td>
+                <td>
+                  <span class="text-muted">Visual Designer</span> <br>
+                  <span class="text-muted">Past Teacher</span>
+                </td>
+                <td>
+                  <span class="text-muted">damial@website.com</span> <br>
+                  <span class="text-muted">900-009-8908-928</span>
+                </td>
+                <td>
+                  <span class="text-muted">12 March 2012</span> <br>
+                  <span class="text-muted">10:20 AM</span>
+                </td>
+                <td>
+                  <select name="category" id="select1" class="form-control select-category">
+                    <option value="0" selected>Moduler</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-key-fill"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i class="bi bi-trash"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle">
+                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                    </buton>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <h6 class="m-0">Danial Kristion</h6>
+                  <p class="text-muted">Texas, United States</p>
+                </td>
+                <td>
+                  <span class="text-muted">Visual Designer</span> <br>
+                  <span class="text-muted">Past Teacher</span>
+                </td>
+                <td>
+                  <span class="text-muted">damial@website.com</span> <br>
+                  <span class="text-muted">900-009-8908-928</span>
+                </td>
+                <td>
+                  <span class="text-muted">12 March 2012</span> <br>
+                  <span class="text-muted">10:20 AM</span>
+                </td>
+                <td>
+                  <select name="category" id="select1" class="form-control select-category">
+                    <option value="0" selected>Moduler</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-key-fill"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i class="bi bi-trash"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle">
+                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                    </buton>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>
+                  <h6 class="m-0">Will Kristion</h6>
+                  <p class="text-muted">Texas, United States</p>
+                </td>
+                <td>
+                  <span class="text-muted">Visual Designer</span> <br>
+                  <span class="text-muted">Past Teacher</span>
+                </td>
+                <td>
+                  <span class="text-muted">damial@website.com</span> <br>
+                  <span class="text-muted">900-009-8908-928</span>
+                </td>
+                <td>
+                  <span class="text-muted">12 March 2012</span> <br>
+                  <span class="text-muted">10:20 AM</span>
+                </td>
+                <td>
+                  <select name="category" id="select1" class="form-control select-category">
+                    <option value="0" selected>Moduler</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-key-fill"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i class="bi bi-trash"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle">
+                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                    </buton>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>
+                  <h6 class="m-0">Danial Arturop</h6>
+                  <p class="text-muted">Texas, United States</p>
+                </td>
+                <td>
+                  <span class="text-muted">Visual Designer</span> <br>
+                  <span class="text-muted">Past Teacher</span>
+                </td>
+                <td>
+                  <span class="text-muted">damial@website.com</span> <br>
+                  <span class="text-muted">900-009-8908-928</span>
+                </td>
+                <td>
+                  <span class="text-muted">12 March 2012</span> <br>
+                  <span class="text-muted">10:20 AM</span>
+                </td>
+                <td>
+                  <select name="category" id="select1" class="form-control select-category">
+                    <option value="0" selected>Moduler</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-key-fill"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i class="bi bi-trash"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle"><i
+                      class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-outline-info rounded-circle">
+                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                    </buton>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- bootstrap js  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

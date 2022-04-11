@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="./asserts/media/images/icons/brand-logo.svg">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fontawesome v5 cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="./asserts/js/script.js"></script>
+
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
+      integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./asserts/css/style.css">
+
+    <title>Statistics</title>
+  </head>
+
+  <body>
+
+    <!-- dashboard menu  -->
+    <aside id="sidebarMenu" class="navbar-expand-lg d-xl-block d-none">
+      <nav class="navbar navbar-dark flex-column">
+        <div class="mx-auto">
+          <a class="navbar-brand d-flex align-items-center justify-content-center" href="./index.html">
+            <img src="./asserts/media/images/icons/brand-logo.svg" alt="mercury" class="brand-logo">
+            <span class="text-white brand-text">Mercury</span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="sidebarContent">
+          <ul class="navbar-nav me-auto mt-1 mb-lg-0 flex-column">
+            <li class="nav-item">
+              <a class="nav-link" type="button" role="tab" href="./dashboard.html"> <i class="fas fa-home"></i> &nbsp;
+                Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" type="button" role="tab" href="./workflow.html"> <i class="fas fa-cube"></i>
+                &nbsp;
+                Workflow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" type="button" role="tab" href="./statistics.html"> <i
+                  class="fas fa-chart-line"></i>
+                &nbsp;
+                Statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" type="button" role="tab" href="./calendar.html"> <i class="fas fa-calendar-week"></i>
+                &nbsp;
+                Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" type="button" role="tab" href="./users.html"> <i class="fas fa-user"></i>
+                &nbsp;
+                Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" type="button" role="tab" href="./settings.html"> <i class="fas fa-cog"></i>
+                &nbsp;
+                Settings</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- offcanvas menu  -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+      style="width:100%">
+      <div class="offcanvas-body p-0">
+        <aside id="sidebarMenu" class="navbar-expand w-100">
+          <nav class="navbar navbar-dark flex-column">
+            <div class="d-flex justify-content-end align-items-center px-5 w-100">
+              <a class="navbar-brand d-flex align-items-center justify-content-center flex-fill" href="./index.html">
+                <img src="./asserts/media/images/icons/brand-logo.svg" alt="mercury" class="brand-logo">
+                <span class="text-white brand-text">Mercury</span>
+              </a>
+              <a class="text-white text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                role="button" aria-controls="offcanvasExample">
+                <i class="fal fa-times fa-2x"></i>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="sidebarContent">
+              <ul class="navbar-nav me-auto mt-1 mb-lg-0 flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link" type="button" role="tab" href="./dashboard.html"> <i class="fas fa-home"></i>
+                    &nbsp;
+                    Home</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link" type="button" role="tab" href="./workflow.html"> <i class="fas fa-cube"></i>
+                    &nbsp;
+                    Workflow</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link active" type="button" role="tab" href="./statistics.html"> <i
+                      class="fas fa-chart-line"></i>
+                    &nbsp;
+                    Statistics</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link" type="button" role="tab" href="./calendar.html"> <i
+                      class="fas fa-calendar-week"></i>
+                    &nbsp;
+                    Calendar</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link" type="button" role="tab" href="./users.html"> <i class="fas fa-user"></i> &nbsp;
+                    Users</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link" type="button" role="tab" href="./settings.html"> <i class="fas fa-cog"></i> &nbsp;
+                    Settings</a>
+                </li>
+              </ul>
+            </div>
+            <form class="searchbox  d-md-none mx-auto">
+              <input type="search" placeholder="Search......" name="search"
+                class="searchbox-input bg-transparent text-white" required>
+              <span class="searchbox-icon"><i class="fa fa-search text-white" aria-hidden="true"></i></span>
+            </form>
+            <button class="add-btn mx-auto mt-4">
+              <a href="./dashboard.html" class="nav-link">
+                Add Project
+              </a>
+            </button>
+          </nav>
+        </aside>
+      </div>
+    </div>
+
+    <!-- side-div -->
+    <div class="side-div">
+      <!-- top menu  -->
+      <nav class="top-menu d-flex justify-content-between align-items-center px-4">
+        <div class="left-menu d-flex align-items-center">
+          <a class="text-decoration-none d-xl-none d-block" data-bs-toggle="offcanvas" href="#offcanvasExample"
+            role="button" aria-controls="offcanvasExample">
+            <i class="fas fa-bars"></i>
+          </a>
+          <form class="searchbox  d-sm-block d-none">
+            <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();"
+              required>
+            <span class="searchbox-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+          </form>
+        </div>
+        <div class="right-menu d-flex align-items-center">
+          <button class="add-btn">
+            <a href="./dashboard.html" class="nav-link">
+              <i class="fas fa-plus"></i> &nbsp;
+              Add Project
+            </a>
+          </button>
+
+          <a tabindex="0" class="text-decoration-none text-dark" role="button" data-bs-toggle="popover"
+            data-bs-trigger="focus" title="Messages" data-bs-content="Your Message"><i class="fas fa-envelope"></i></a>
+
+          <a tabindex="0" class="text-decoration-none text-dark" role="button" data-bs-toggle="popover"
+            data-bs-trigger="focus" title="Notifications" data-bs-content="Your Notifications">
+            <i class="fas fa-bell"></i>
+          </a>
+
+          <div class="dropdown">
+            <a class="text-decoration-none text-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="profile">
+                  <i class="fas fa-user text-white"></i>
+                </div>&nbsp;
+                <i class="fas fa-sort-down"></i>
+              </div>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="./dashboard.html">My Account</a></li>
+              <li><a class="dropdown-item" href="./settings.html">Settings</a></li>
+              <li><a class="dropdown-item" href="./index.html">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main content  -->
+      <div class="main-content">
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Statistics -->
+            <div class="row">
+              <div class="d-flex justify-content-between align-items-center flex-md-row flex-column">
+                <h4>Lorem Iopsum Stats</h4>
+                <div class="d-flex flex-md-row flex-column">
+                  <form>
+                    <select name="month" id="month" class="form-select mt-1 mt-md-0">
+                      <option value="lm" selected>Period: Last Month</option>
+                      <option value="jan">January</option>
+                      <option value="jan">January</option>
+                      <option value="jan">January</option>
+                      <option value="jan">January</option>
+                    </select>
+                  </form>&nbsp;
+                  <form>
+                    <select name="type" id="type" class="form-select mt-1 mt-md-0">
+                      <option value="tn" selected>Type: Notification</option>
+                      <option value="message">Message</option>
+                      <option value="message">Message</option>
+                      <option value="message">Message</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-12 col-md-4">
+                <div class="card h-100">
+                  <div class="card-body h-100 p-0">
+                    <div class="sales-row h-50 p-4 d-flex justify-content-around align-items-center">
+                      <div class="d-flex justify-content-center align-items-center flex-column text-secondary">
+                        <h3>1,560</h3>
+                        <small>Sales</small>
+                      </div>
+                      <div class="sales-state">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                    <div class="view-row h-50 p-4 d-flex justify-content-around align-items-center border-top">
+                      <div class="d-flex justify-content-center align-items-center flex-column text-secondary">
+                        <h3>3,230</h3>
+                        <small>Views</small>
+                      </div>
+                      <div class="sales-state">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-8 px-sm-1 mt-sm-0 mt-2">
+                <div class="card h-100">
+                  <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h4 class="heading mb-0">Active users</h4>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none">
+                          <div class="profile bg-white text-secondary profile-border"><i class="fas fa-pen"></i></div>
+                        </a>
+                        &nbsp;
+                        <a href="#" class="text-decoration-none">
+                          <div class="profile bg-white text-secondary profile-border"><i class="fas fa-trash-alt"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="report-chart">
+                      <canvas id="myChart" width="343" height="100" class="mt-3"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h4 class="heading mb-0">Total Sales</h4>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none">
+                          <div class="profile bg-white text-secondary profile-border"><i class="fas fa-pen"></i></div>
+                        </a>
+                        &nbsp;
+                        <a href="#" class="text-decoration-none">
+                          <div class="profile bg-white text-secondary profile-border"><i class="fas fa-trash-alt"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="row mt-3 p-3">
+                      <div class="col-md-4 mt-4 mt-md-0">
+                        <div class="row">
+                          <div class="col-lg-7 d-flex justify-content-center">
+                            <div class="circle-chart direct-chart">
+                              <h2 class="mb-0">75%</h2>
+                            </div>
+                          </div>
+                          <div
+                            class="col-lg-5 mt-2 mt-lg-0 d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <div
+                              class="chart-text d-flex justify-content-center align-items-center flex-column text-secondary">
+                              <h3>2,300$</h3>
+                              <small>Direct Sales</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mt-4 mt-md-0">
+                        <div class="row">
+                          <div class="col-lg-7 d-flex justify-content-center">
+                            <div class="circle-chart channel-chart">
+                              <h2 class="mb-0">25%</h2>
+                            </div>
+                          </div>
+                          <div
+                            class="col-lg-5 mt-2 mt-lg-0 d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <div
+                              class="chart-text d-flex justify-content-center align-items-center flex-column text-secondary">
+                              <h3>980$</h3>
+                              <small>Channel Sales</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mt-4 mt-md-0">
+                        <div class="row">
+                          <div class="col-lg-7 d-flex justify-content-center">
+                            <div class="circle-chart indirect-chart">
+                              <h2 class="mb-0">50%</h2>
+                            </div>
+                          </div>
+                          <div
+                            class="col-lg-5 mt-2 mt-lg-0 d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <div
+                              class="chart-text d-flex justify-content-center align-items-center flex-column text-secondary">
+                              <h3>1,250$</h3>
+                              <small>Indirect Sales</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- chart  -->
+    <script>
+      const ctx = document.getElementById('myChart');
+
+      const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+            label: '# of Votes',
+            data: [6, 1, 3, 5, 2, 3],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+
+
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+      </script>
+
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+
+      var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+        trigger: 'focus'
+      })
+    </script>
+
+  </body>
+
+</html>

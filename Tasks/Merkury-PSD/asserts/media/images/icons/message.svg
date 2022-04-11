@@ -1,0 +1,15 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 17" width="25" height="17">
+	<title>email5 (8)-eps</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m0 0h25v17h-25z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #000000 } 
+	</style>
+	<g id="Page 1" clip-path="url(#cp1)">
+		<path id="Path 1" class="s0" d="m14.55 9.47l8.25 7.07c-0.3 0.29-0.7 0.46-1.15 0.46h-19.98c-0.45 0-0.85-0.17-1.15-0.46l8.25-7.07l2.89 2.53l2.88-2.53zm-2.88 0.86l-11.14-9.55c0.3-0.29 0.71-0.46 1.15-0.46h19.98c0.45 0 0.85 0.17 1.15 0.46l-11.13 9.55zm-3.61-1.54l-8.06 6.85v-13.84l8.06 7zm15.28-7.01v13.85l-8.06-6.85l8.06-7.01z" />
+	</g>
+</svg>
